@@ -1,0 +1,5 @@
+3.  Why do you need to bind event handlers in class components?
+
+In contrast to functional components, class components in React handle events slightly differently. Traditionally, event handlers in class components require binding to the instance of the class to ensure that this refers to the component.
+
+This can be done in the constructor or by using class field syntax to define the event handler as an arrow function.

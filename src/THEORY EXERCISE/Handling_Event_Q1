@@ -1,0 +1,13 @@
+1. How are events handled in React compared to vanilla JavaScript? Explain the
+concept of synthetic events.
+
+=> In vanilla JavaScript, event handling typically involves adding event listeners to DOM elements using methods like addEventListener
+
+Key differences:
+
+ A. Syntax: React uses camelCase (onClick), while vanilla JS uses lowercase (onclick).
+ B. Binding: In vanilla JavaScript, you often need to explicitly bind this when using event handlers in classes. In  React, this is mostly avoided when using functional components and hooks.
+ C. Event System: React uses a synthetic event system, while vanilla JS interacts directly with the native DOM      event system.
+
+ Synthetic Events in React
+React uses a SyntheticEvent system to wrap native events. A SyntheticEvent is a cross-browser wrapper around the browser’s native event system, providing a consistent interface regardless of differences between browsers.
